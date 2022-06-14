@@ -24,11 +24,13 @@
     top:0;
     border-top: 1px solid rgba(8, 75, 109, 0.08);
     border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+    background-color: $solidWhite ;
 
     .wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px 0;
     }
     //takes off the checkbox, checkbox does not need to be checked because the label can since its connected with the "for attribute"
     input[type=checkbox]{
@@ -42,12 +44,29 @@
     .menu-icon, .bag{
         margin-right: 15px;
     }
+    .menu-icon{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
     .bag{
         display: flex;
+    }
+    .counter {
+        display: flex;
+        align-items: center;
+        p{
+            width: 24px;
+            height: 24px;
+            background-color: $primary;
+            border-radius: 50%;
+            color: $solidWhite;
+            text-align: center;
+        }
     }
 }
 
 // Slide Out Nav
 .slide-out-nav{
-    display: none;
+   background-color: purple;
 }
