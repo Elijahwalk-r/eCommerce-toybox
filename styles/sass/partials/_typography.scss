@@ -13,8 +13,8 @@
 @font-face {
     font-family: "Jakarta Sans";
     src: url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff'),
-        url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2),
-        url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
+    url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2),
+    url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
     font-weight: bold;
 }
 
@@ -80,7 +80,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
-img{
-    max-width: 100%;
-    display: block;
+
+.small-copy{
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2rem;
 }

@@ -1,0 +1,53 @@
+// Skip Link
+// this makes it off the page, and available for non sighted users/non mouse users to tab and return to main content, it needs to be visible when it receives a focus. were just hiding it, but when it focuses its back on the page. skip link anchor tag has an id to go to main content
+.skip-link{
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    background-color: $solidWhite;
+    color: black;
+    z-index: 10;
+    &:focus{
+        left: 0;
+    }
+}
+
+// Announcements
+.announcements{
+    text-align: center;
+    padding: 10px 0;
+}
+
+// Nav Bar
+.nav-bar{
+    position: sticky;
+    top:0;
+    border-top: 1px solid rgba(8, 75, 109, 0.08);
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    //takes off the checkbox, checkbox does not need to be checked because the label can since its connected with the "for attribute"
+    input[type=checkbox]{
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.search-cart{
+    display: flex;
+    .menu-icon, .bag{
+        margin-right: 15px;
+    }
+    .bag{
+        display: flex;
+    }
+}
+
+// Slide Out Nav
+.slide-out-nav{
+    display: none;
+}
