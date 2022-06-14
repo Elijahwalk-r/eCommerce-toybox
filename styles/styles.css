@@ -392,6 +392,7 @@ section {
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
   background-color: #fff;
+  z-index: 10;
 }
 .nav-bar .wrapper {
   display: -webkit-box;
@@ -486,4 +487,70 @@ section {
 .menu-close {
   color: #fff;
   font-size: 1.2rem;
+}
+
+header {
+  background-color: #f8fbf3;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.header-img-container {
+  width: 47%;
+}
+
+.text-container {
+  width: 47%;
+}
+
+.category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.category-list .item-one {
+  background-color: #ffd698;
+}
+.category-list .item-two {
+  background-color: #f4fcff;
+}
+.category-list .item-three {
+  background-color: #f8fbf3;
+}
+.category-list .item-four {
+  background-color: #fff5f5;
+}
+.category-list .items {
+  border-radius: 10%;
+  width: calc(45% - 50px);
+  margin: 50px 25px 25px;
+  padding: 40px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.category-list .items img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.category-list .items:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
