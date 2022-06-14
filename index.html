@@ -23,14 +23,18 @@
 		<div class="wrapper">
 			<!-- Slide Out Menu -->
 			<input type="checkbox" id="open-side-menu">
-			<label for="open-side-menu">
+			<label for="open-side-menu" class="menu-button">
 				<img src="./assets/menu-button.svg" alt="Menu Button">
 			</label>
 
 			<!-- Slide Out Nav Content -->
 			<div class="slide-out-nav">
-				<button>x</button>
-				<nav>
+				<div class="button-container">
+					<!-- <button class="menu-close">x</button> -->
+					<label for="open-side-menu" class="menu-close">x</label>
+				</div>
+				
+				<nav class="main-menu">
 					<ul>
 						<li>
 							<a href="">Shop</a>

@@ -315,6 +315,13 @@ a {
   line-height: 1.2rem;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -402,6 +409,13 @@ section {
   opacity: 0;
   position: absolute;
 }
+.nav-bar input[type=checkbox]:checked ~ .slide-out-nav {
+  left: 0;
+}
+
+.menu-button {
+  cursor: pointer;
+}
 
 .search-cart {
   display: -webkit-box;
@@ -410,11 +424,6 @@ section {
 }
 .search-cart .menu-icon, .search-cart .bag {
   margin-right: 15px;
-}
-.search-cart .menu-icon {
-  background-color: transparent;
-  border: none;
-  padding: 0;
 }
 .search-cart .bag {
   display: -webkit-box;
@@ -440,4 +449,41 @@ section {
 
 .slide-out-nav {
   background-color: purple;
+  position: fixed;
+  top: 0;
+  left: -506px;
+  height: 100vh;
+  width: 100%;
+  max-width: 506px;
+  color: #fff;
+  font-family: "Young Serif";
+  padding: 35px 50px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.main-menu a {
+  font-family: "Young Serif";
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main-menu a:hover, .main-menu a:focus {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-close {
+  color: #fff;
+  font-size: 1.2rem;
 }
