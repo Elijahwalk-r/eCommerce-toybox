@@ -1,3 +1,4 @@
+// Home page header 
 header{
     background-color: $tertiary;
 }
@@ -14,4 +15,25 @@ header .wrapper{
 }
 .text-container{
     width: 47%;
+}
+
+// Contact page header
+.contact-header{
+    background-color: $quaternary;
+    padding-top: 120px;
+}
+.contact-header .wrapper{
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.contact-header::after{
+    content: '';
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/wave.svg);
+    background-size: 100% 150px;
+    background-color: $quaternary;
+    display: block;
 }
